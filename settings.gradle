@@ -1,0 +1,3 @@
+rootProject.name='Mp4Record'
+include ':app'
+include ':librecord'
