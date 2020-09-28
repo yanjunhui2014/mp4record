@@ -253,7 +253,9 @@ public class Mp4Recorder implements RecorderProvider {
         if (mMediaRecorder != null) {
             try {
                 mMediaRecorder.stop();
-                ((Camera) mCameraProvider.getCamera()).stopPreview();
+                if (mCameraProvider instanceof ApiLowCameraProvider) {
+                    ((Camera) mCameraProvider.getCamera()).stopPreview();
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }

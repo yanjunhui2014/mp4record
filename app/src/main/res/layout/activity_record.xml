@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/mFrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/mTvState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="选择分辨率" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择分辨率" />
+
+    <RadioGroup
+        android:id="@+id/mRaGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/mRaBtn320"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="320*240" />
+
+        <RadioButton
+            android:id="@+id/mRaBtn640"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="640*480" />
+
+        <RadioButton
+            android:id="@+id/mRaBtn1280"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1280*720" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/mTvRatio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实际分辨率" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mBtnStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="开始" />
+
+        <Button
+            android:id="@+id/mBtnPause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/mBtnResume"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="恢复" />
+
+        <Button
+            android:id="@+id/mBtnEnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="结束" />
+    </LinearLayout>
+
+</LinearLayout>
